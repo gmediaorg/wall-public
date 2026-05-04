@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-05-04T17:47:19.537Z",
+  "exported_at": "2026-05-04T18:27:16.133Z",
   "exported_for_date": "2026-05-05",
   "source": "https://wall.tg/api/product",
   "sanitized": true,
@@ -10,11 +10,11 @@
   "status": "open_beta",
   "independence_note": "Wall is independent — not affiliated with Telegram, TON Foundation, or @durov. Uses open Telegram Mini App infrastructure.",
   "stats": {
-    "users": 87219,
-    "public_posts": 42622,
+    "users": 87493,
+    "public_posts": 42696,
     "chain_posts": 0,
-    "premium_users": 33483,
-    "updated_at": "2026-05-04T17:47:19.457Z"
+    "premium_users": 33290,
+    "updated_at": "2026-05-04T18:27:16.068Z"
   },
   "pricing": {
     "free": {
@@ -441,7 +441,7 @@
   },
   "meta": {
     "schema_version": "1.0",
-    "generated_at": "2026-05-04T17:47:19.457Z",
+    "generated_at": "2026-05-04T18:27:16.068Z",
     "update_frequency": "on_deploy_plus_5min_stats"
   }
 }
