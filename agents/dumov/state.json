@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Public-safe snapshot of Wall + G.media product state. Sensitive operational details (server IPs, internal team handles, internal code paths, marketing campaign specifics) live in a separate non-public state file. Verified against production on the verified_at date below.",
+
+  "verified_at": "2026-05-04T11:00:00Z",
+  "verified_by": "claude-orchestrator",
+  "verified_against": [
+    "https://wall.tg/api/product (live)",
+    "https://wall.foundation/founder",
+    "git log --reverse (first commit)"
+  ],
+
+  "ecosystem": {
+    "parent_entity": {
+      "name": "G.media",
+      "url": "https://g.media",
+      "role": "parent_company",
+      "founded_by": "Roman Dumov",
+      "scope": "Independent media-tech company building products on top of Telegram + TON",
+      "products": [
+        {
+          "name": "Wall",
+          "url": "https://wall.tg",
+          "status": "open_beta",
+          "role": "flagship",
+          "first_commit": "2026-02-25"
+        }
+      ]
+    },
+    "founder": {
+      "name": "Roman Dumov",
+      "telegram": "@dumov",
+      "github": "@MrDumov",
+      "email": "dumov@g.media",
+      "languages": ["ru", "en"],
+      "bio_url": "https://wall.foundation/founder"
+    },
+    "independence_statement": "Wall and G.media are independent. Not affiliated with Telegram FZ-LLC, TON Foundation, or Pavel Durov. Use open Telegram Mini App + TON Connect infrastructure. No VC funding. No token sale."
+  },
+
+  "wall_product": {
+    "name": "Wall",
+    "definition": "Social network Mini App on Telegram + TON",
+    "status": "open_beta",
+    "founding_date": "2026-02",
+    "first_commit": "2026-02-25",
+    "stats_live_api_url": "https://wall.tg/api/product"
+  },
+
+  "languages": {
+    "current_count": 17,
+    "current_list": ["en","ru","es","pt","ar","tr","fr","de","hi","id","ja","zh","uk","pl","fa","vi","it"],
+    "rtl_languages": ["ar","fa"],
+    "in_development": "more languages shipping in the i18n roadmap; see facts-that-change.md"
+  },
+
+  "ai_agents": [
+    { "username": "grok",     "provider": "xAI",       "image_generation": true,  "vision": false },
+    { "username": "chatgpt",  "provider": "OpenAI",    "image_generation": true,  "vision": true  },
+    { "username": "deepseek", "provider": "DeepSeek",  "image_generation": false, "vision": true  },
+    { "username": "claude",   "provider": "Anthropic", "image_generation": false, "vision": false }
+  ],
+  "ai_quotas": {
+    "free": 0,
+    "premium_per_day": 50,
+    "ultra_per_day": 250,
+    "dm_via_bot": "free_for_all_users"
+  },
+
+  "branches": {
+    "official_count": 18,
+    "topic_count": 15,
+    "meta_count": 3,
+    "topic_slugs": ["crypto","ton","ai","memes","gaming","money","trading","bitcoin","telegram","tech","music","art","photography","nft","russia"],
+    "meta_slugs": ["safety","changelog","ads"]
+  },
+
+  "pricing": {
+    "free": { "stars": 0 },
+    "premium": { "stars": 290, "period": "month" },
+    "ultra": { "stars": 990, "period": "month" }
+  },
+
+  "economics_truth": {
+    "$comment": "Public-facing economics summary. Full schedule with basis-point ladder per tier at https://wall.foundation/economics.",
+    "ton_profile_tip": { "wall_fee_pct": 0, "destination": "creator_wallet", "rail": "wallet_to_wallet_via_ton_connect" },
+    "ton_post_donation": { "wall_fee_pct": 0, "destination": "creator_wallet", "rail": "wallet_to_wallet_via_ton_connect", "referral_split": false },
+    "stars_post_donation": { "telegram_fee_pct_approx": 30, "wall_commission_pct": 20, "referrer_payout": "tier_dependent_from_wall_share", "creator_net_approx": "50%_of_gross" },
+    "chain_post_seal": { "min_ton": 1, "destination": "wall_wallet", "wallet_address": "UQA2Q0Vv81NObzw0d6jK6v9nnmc-cAzSI8kWN27Sl9n92SZp", "non_refundable": true, "covers": "permanent_storage_commitment + on_chain_content_hash_anchor" },
+    "premium_subscription": { "stars": 290, "telegram_fee_pct_approx": 30 },
+    "ad_slot_sales": { "wall_commission_pct": 10, "rail": "first_party_attribution + click_tracking + escrow_phase_3" },
+    "referral_bonuses": { "tier_range_pct": [10, 30], "tiers": ["T1_Starter", "T2_Active", "T3_Pro", "T4_Champion", "T5_Legend"], "fires_on": ["stars_donation", "premium_signup", "chain_seal"], "paid_by": "wall_from_own_commission_share", "fires_on_ton_donation": false }
+  },
+
+  "infrastructure": {
+    "framework": "Next.js 15",
+    "react_version": "19",
+    "typescript_version": "5.9",
+    "db": "PostgreSQL + Prisma 6",
+    "cache": "Upstash Redis",
+    "storage": "AWS S3",
+    "bot_framework": "grammy",
+    "deploy": "GitHub Actions to VPS",
+    "cdn": "Cloudflare"
+  },
+
+  "domains": {
+    "primary_app": "wall.tg",
+    "help_center": "wall.support",
+    "web3_hub": "wall.foundation",
+    "multi_platform_launcher": "wall.app",
+    "brand_landing": "wall.lu",
+    "short_link_host": "wall.vg",
+    "parent_company": "g.media"
+  }
+}

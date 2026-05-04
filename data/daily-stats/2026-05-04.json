@@ -1,0 +1,405 @@
+{
+  "exported_at": "2026-05-04T15:15:52.187Z",
+  "exported_for_date": "2026-05-04",
+  "source": "https://wall.tg/api/product",
+  "sanitized": true,
+  "name": "Wall",
+  "tagline": "A social platform that lives inside Telegram",
+  "description": "Wall is an independent social platform built as a Telegram Mini App. Personal walls, hand-drawn graffiti, Pixel Battle collaborative canvas, four AI agents (@grok/@chatgpt/@deepseek/@claude), TON blockchain tips and Chain Posts, 18 Branches (15 topic + 3 meta), gifts in Telegram Stars.",
+  "url": "https://wall.tg",
+  "status": "open_beta",
+  "independence_note": "Wall is independent — not affiliated with Telegram, TON Foundation, or @durov. Uses open Telegram Mini App infrastructure.",
+  "stats": {
+    "users": 86035,
+    "public_posts": 42360,
+    "chain_posts": 0,
+    "premium_users": 34001,
+    "updated_at": "2026-05-04T15:15:52.109Z"
+  },
+  "pricing": {
+    "free": {
+      "price_xtr": 0,
+      "description": "All basic features"
+    },
+    "premium": {
+      "price_xtr": 290,
+      "price_per": "month",
+      "features": [
+        "1000-char posts (vs 500 free)",
+        "Anonymous posting",
+        "Ad-free",
+        "50 AI @mentions/day",
+        "10s Pixel Battle cooldown (3× faster)",
+        "Paid posts + premium badge",
+        "Social links on profile"
+      ]
+    },
+    "ultra": {
+      "price_xtr": 990,
+      "price_per": "month",
+      "features": [
+        "Everything in Premium",
+        "250 AI @mentions/day (5× Premium)",
+        "3s Pixel Battle cooldown (10× faster)",
+        "Ultra badge"
+      ]
+    },
+    "currency_note": "Prices in Telegram Stars (XTR). Also payable via TON (CryptoBot), RUB (KassaBot)."
+  },
+  "features": {
+    "personal_wall": "Every user has a personal wall (profile page). Others can leave posts, graffiti, and gifts.",
+    "graffiti": "Freehand canvas with 5 brush types (default, marker, neon, eraser, fill). Full color picker. Draft auto-save.",
+    "pixel_battle": {
+      "description": "Shared collaborative pixel canvas for all users simultaneously, like r/place.",
+      "cooldowns": {
+        "free_sec": 30,
+        "premium_sec": 10,
+        "ultra_sec": 3
+      },
+      "color_bombs": {
+        "price_xtr": 50,
+        "types": [
+          "standard_3x3",
+          "splash_9x9",
+          "heart_stamp",
+          "star_stamp",
+          "smile_stamp",
+          "letter_stamp",
+          "eraser_5x5"
+        ]
+      },
+      "leaderboard": true,
+      "seasons": true
+    },
+    "ai_agents": [
+      {
+        "username": "grok",
+        "provider": "xAI",
+        "persona": "Sharp, funny, irreverent",
+        "image_generation": true,
+        "model": "Grok"
+      },
+      {
+        "username": "chatgpt",
+        "provider": "OpenAI",
+        "persona": "Friendly, balanced, thorough",
+        "image_generation": true,
+        "model": "GPT-4o + DALL·E 3"
+      },
+      {
+        "username": "deepseek",
+        "provider": "DeepSeek",
+        "persona": "Analytical, precise, technical",
+        "image_generation": false,
+        "vision": true
+      },
+      {
+        "username": "claude",
+        "provider": "Anthropic",
+        "persona": "Thoughtful, nuanced, honest",
+        "image_generation": false,
+        "model": "Claude"
+      }
+    ],
+    "ai_quotas": {
+      "free": 0,
+      "premium_per_day": 50,
+      "ultra_per_day": 250,
+      "dm_via_bot": "free_all_users",
+      "bot_commands": [
+        "/grok",
+        "/chatgpt",
+        "/deepseek",
+        "/claude"
+      ]
+    },
+    "chain_posts": {
+      "blockchain": "TON",
+      "min_stake_ton": 1,
+      "gas_approx_ton": 0.01,
+      "platform_fee": 0,
+      "immutable": true,
+      "public_on_explorers": [
+        "tonscan.org",
+        "tonviewer.com"
+      ],
+      "leaderboard": "staked_by_amount"
+    },
+    "gifts": [
+      {
+        "name": "Heart",
+        "price_xtr": 5
+      },
+      {
+        "name": "Star",
+        "price_xtr": 10
+      },
+      {
+        "name": "Fire",
+        "price_xtr": 15
+      },
+      {
+        "name": "Rocket",
+        "price_xtr": 25
+      },
+      {
+        "name": "Diamond",
+        "price_xtr": 50
+      },
+      {
+        "name": "Crown",
+        "price_xtr": 100
+      },
+      {
+        "name": "Unicorn",
+        "price_xtr": 200
+      },
+      {
+        "name": "Trophy",
+        "price_xtr": 500
+      }
+    ],
+    "branches": {
+      "count": 18,
+      "topic_count": 15,
+      "meta_count": 3,
+      "topic_slugs": [
+        "crypto",
+        "ton",
+        "ai",
+        "memes",
+        "gaming",
+        "money",
+        "trading",
+        "bitcoin",
+        "telegram",
+        "tech",
+        "music",
+        "art",
+        "photography",
+        "nft",
+        "russia"
+      ],
+      "meta_slugs": [
+        "safety",
+        "changelog",
+        "ads"
+      ],
+      "slugs": [
+        "crypto",
+        "ton",
+        "ai",
+        "memes",
+        "gaming",
+        "money",
+        "trading",
+        "bitcoin",
+        "telegram",
+        "tech",
+        "music",
+        "art",
+        "photography",
+        "nft",
+        "russia",
+        "safety",
+        "changelog",
+        "ads"
+      ],
+      "public_feed_url": "https://wall.tg/b/{slug}",
+      "listing_url": "https://wall.tg/branches",
+      "note": "15 topic channels + 3 platform meta channels (Safety, Changelog, ADS)."
+    },
+    "wall_level": {
+      "description": "On-platform reputation badge \"Lv N\" computed from followers, posts, and gifts received. Six tiers: Newcomer → Beginner → Active → Notable → Star → Legend.",
+      "custom_label": "Premium and Ultra subscribers can replace the numeric label with a custom string (max 12 chars).",
+      "visible_on": [
+        "profile",
+        "post_byline",
+        "comment_byline",
+        "leaderboards"
+      ],
+      "help_url": "https://wall.support/wall-level"
+    },
+    "verified_creator": {
+      "description": "Wall ✓ verified badge — manually granted to creators by Wall admins. Surfaced on profile and post bylines. Independent of Telegram's own verified mark.",
+      "criteria": "editorial — notable contribution, public identity, follower threshold",
+      "admin_endpoint": "/api/admin/verified",
+      "visible_on": [
+        "profile",
+        "post_byline"
+      ]
+    },
+    "polls": {
+      "description": "Polls on posts — multiple-choice options, single or multi-select, optional expiration. Vote counts public; voter list visible to author only.",
+      "max_options": 10,
+      "anonymous": "allowed for Premium / Ultra authors"
+    },
+    "creator_monetization": {
+      "tips_on_profile": {
+        "currencies": [
+          "XTR",
+          "TON"
+        ],
+        "platform_fee_pct": 0
+      },
+      "post_donations": {
+        "currency": "TON",
+        "author_share_pct": 90,
+        "referrer_share_pct": 10
+      },
+      "paid_posts": {
+        "currency": "XTR",
+        "requires": "premium_or_ultra"
+      },
+      "referral_bonus": {
+        "currency": "TON",
+        "bonus_pct": 10,
+        "on": "referred_donations"
+      },
+      "withdrawal_status": "paused_open_beta",
+      "withdrawal_note": "Earnings accumulate. Withdrawals open after beta exit. Announced via @wall_people."
+    },
+    "inline_sharing": {
+      "description": "Type @wall in any Telegram chat to share posts, profiles, Branches.",
+      "language_override": "@wall lang <code> — share invite in specific language (all 17 supported)"
+    },
+    "payments": {
+      "telegram_stars": {
+        "status": "active",
+        "note": "Primary payment method"
+      },
+      "ton_connect": {
+        "status": "active",
+        "wallets": [
+          "Tonkeeper",
+          "MyTonWallet"
+        ]
+      },
+      "cryptobot": {
+        "status": "active",
+        "currencies": [
+          "TON",
+          "BTC",
+          "ETH",
+          "USDT",
+          "other"
+        ]
+      },
+      "x_rocket": {
+        "status": "active"
+      },
+      "kassabot": {
+        "status": "active",
+        "currencies": [
+          "RUB"
+        ]
+      },
+      "apple_iap": {
+        "status": "planned_2026"
+      },
+      "google_billing": {
+        "status": "planned_2026"
+      }
+    }
+  },
+  "languages": {
+    "count": 17,
+    "list": [
+      "en",
+      "ru",
+      "es",
+      "pt",
+      "ar",
+      "tr",
+      "fr",
+      "de",
+      "hi",
+      "id",
+      "ja",
+      "zh",
+      "uk",
+      "pl",
+      "fa",
+      "vi",
+      "it"
+    ],
+    "full_names": [
+      "English",
+      "Русский",
+      "Español",
+      "Português",
+      "العربية",
+      "Türkçe",
+      "Français",
+      "Deutsch",
+      "हिन्दी",
+      "Bahasa Indonesia",
+      "日本語",
+      "中文",
+      "Українська",
+      "Polski",
+      "فارسی",
+      "Tiếng Việt",
+      "Italiano"
+    ],
+    "rtl": [
+      "ar",
+      "fa"
+    ],
+    "auto_detect": "from Telegram language setting"
+  },
+  "roadmap": {
+    "q2_2026": [
+      "Beta exit + withdrawals open",
+      "Web auth via TON wallet"
+    ],
+    "q3_2026": [
+      "iOS native app (App Store)",
+      "Android native app (Google Play)"
+    ],
+    "q4_2026": [
+      "Discord integration",
+      "Multi-chain expansion (EVM)",
+      "NFT integration"
+    ],
+    "source": "https://wall.foundation/roadmap"
+  },
+  "canonical_urls": {
+    "main_app": "https://wall.tg",
+    "multi_platform": "https://wall.app",
+    "help_center": "https://wall.support",
+    "web3_hub": "https://wall.foundation",
+    "brand_landing": "https://wall.lu",
+    "bot": "https://t.me/wall",
+    "community": "https://t.me/wall_people"
+  },
+  "ecosystem": {
+    "company": "G.media",
+    "parent_company": {
+      "name": "G.media",
+      "url": "https://g.media",
+      "role": "parent",
+      "description": "Independent media tech company building products on top of Telegram and TON."
+    }
+  },
+  "data_feeds": {
+    "llms_txt": "https://wall.tg/llms.txt",
+    "product_api": "https://wall.tg/api/product",
+    "blog_rss": "https://wall.tg/blog/rss.xml",
+    "blog_index": "https://wall.tg/blog",
+    "sitemap": "https://wall.tg/sitemap.xml",
+    "atom_feed": "https://wall.tg/feed.xml"
+  },
+  "press": {
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "Wall (wall.tg)",
+    "contact": "https://wall.support/contact",
+    "independence": "Wall is built by an independent team. Not affiliated with Telegram, TON Foundation, or Pavel Durov."
+  },
+  "meta": {
+    "schema_version": "1.0",
+    "generated_at": "2026-05-04T15:15:52.109Z",
+    "update_frequency": "on_deploy_plus_5min_stats"
+  }
+}

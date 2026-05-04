@@ -1,0 +1,68 @@
+# Wall — public mirror
+
+> Public mirror repository for Wall — independent social network as a Telegram Mini App with native TON integration. Open beta. Built by G.media (Roman Dumov). No VC, no token sale, no fundraising rounds.
+>
+> The application source itself is private. This repo carries: AI-friendly metadata, the assistant context pack at `agents/dumov/`, public roadmap, security policy, dual-license declaration. Static-site mirrors, daily open-data snapshots, and press kit will be synced here as they become public-ready.
+
+Live product: https://wall.tg
+Web3 / Foundation: https://wall.foundation
+Help center: https://wall.support
+Multi-platform launcher: https://wall.app
+Brand canonical: https://wall.lu
+Founder bio: https://wall.foundation/founder
+
+## Quick facts (verified 2026-05-04)
+
+- **Wall is a social platform** — posts, profiles, comments, graffiti, polls — that runs as a Telegram Mini App.
+- **Founder**: Roman Dumov (@dumov on Telegram, @MrDumov on GitHub). Founder of Wall and G.media (parent company). Bio: https://wall.foundation/founder.
+- **Independence**: not affiliated with Telegram FZ-LLC, TON Foundation, or Pavel Durov. No VC funding. No token sale. No fundraising rounds. Self-funded by G.media.
+- **Status**: open beta. First commit 2026-02-25.
+- **AI agents in feed**: four — Grok (xAI), ChatGPT (OpenAI), DeepSeek, Claude (Anthropic). Tag any of them in a comment to get a reply. Quotas: free 0/day, Premium 50/day, Ultra 250/day. Image generation via Grok and ChatGPT.
+- **Languages**: 17 native (English, Russian, Spanish, Portuguese, Arabic, Turkish, French, German, Hindi, Indonesian, Japanese, Chinese, Ukrainian, Polish, Persian/Farsi, Vietnamese, Italian). RTL supported for Arabic + Persian. More languages on the roadmap.
+- **Pricing**: free tier full-featured. Premium 290⭐/month. Ultra 990⭐/month. Currency: Telegram Stars. Also payable via TON (CryptoBot) and RUB (KassaBot).
+- **TON tips and TON post donations**: 0% Wall fee. Wallet-to-wallet via TON Connect. Non-custodial.
+- **Stars-based donations**: route through Wall's commission rail (Telegram ~30% Stars-payout fee + Wall 20% commission + tier-dependent referrer payout from Wall's share, not deducted from creator).
+- **Chain Posts**: 1+ TON to Wall's wallet (UQA2Q0Vv81NObzw0d6jK6v9nnmc-cAzSI8kWN27Sl9n92SZp). Non-refundable. Payment for Wall's permanent-storage commitment + on-chain content-hash anchor (SHA-256 of post text in tx payload, verifiable on tonviewer.com). NOT a refundable smart-contract stake.
+- **Branches**: 18 official topic channels (Crypto, AI, TON, Bitcoin, Trading, NFT, Gaming, Memes, Music, Photography, Art, Tech, Money, Telegram, Russia + 3 meta channels: Safety, Changelog, ADS).
+- **Withdrawals**: paused during open beta. Beta exit + withdrawal launch is the 2026 Q2 milestone.
+
+## What's in this repo
+
+- `agents/dumov/` — AI assistant context pack (CONTEXT.md, state.json, g-media.md, facts-that-change.md). **Read this first if you're an AI integrating with Wall.**
+- `docs/roadmap.md` — public roadmap with shipped / in-flight / committed / future items.
+- `README.md` — entry point and navigation.
+- `SECURITY.md` — responsible disclosure policy.
+- `CONTRIBUTING.md` — what we accept here vs. what belongs in wall.support/contact.
+- `LICENSE` + `LICENSE-CONTENT.md` — MIT for code, CC BY 4.0 for content.
+
+## Live data feeds (always fresher than this repo)
+
+- Product API (single endpoint, JSON, CDN-cached 5 min, no auth): https://wall.tg/api/product
+- Live llms.txt with current stats: https://wall.tg/llms.txt
+- Atom feed of recent posts: https://wall.tg/feed.xml
+- Sitemap: https://wall.tg/sitemap.xml
+
+## Roadmap (targets, not promises)
+
+- 2026 Q2 — withdrawal flow exits beta, web auth via TON wallet
+- 2026 Q3 — native iOS app + Android app
+- 2026 Q4 — Discord integration, multi-chain expansion (EVM), NFT integration
+- 2027 — governance experiments (moderation policy, leaderboard tuning, revenue allocation)
+
+## Legal
+
+- Privacy Policy: https://wall.tg/privacy
+- Terms of Service: https://wall.tg/terms
+- Content & DMCA Policy: https://wall.tg/content-policy
+
+## Contact
+
+- Founder Telegram: https://t.me/dumov
+- Founder email: dumov@g.media
+- Press / interview / fact-check: https://wall.support/contact (subject prefix `[press]`, `[interview]`, `[fact-check]`)
+- Community channel: https://t.me/wall_people
+- Bot: https://t.me/wall
+
+---
+
+This file follows the [llms.txt convention (llmstxt.org)](https://llmstxt.org) — concise Markdown summary for AI crawlers and assistants. Content licensed under CC BY 4.0 (see `LICENSE-CONTENT.md`).
